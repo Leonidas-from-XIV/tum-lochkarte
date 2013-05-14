@@ -1,5 +1,6 @@
 \documentclass[EU2]{beamer}
-\usepackage{lmodern}
+% need fontspec for Unicode characters, but don't need font
+\usepackage{fontspec}
 \usepackage[ngerman]{babel}
 \usepackage{csquotes}
 \mode<presentation>{\usetheme{Copenhagen}}
@@ -9,6 +10,7 @@
 \institute{Technische Universität München}
 
 \hypersetup{pdfencoding=auto}
+%\fontspec{Latin Modern Roman}
 
 \beamertemplatenavigationsymbolsempty
 
@@ -89,14 +91,27 @@
 
 \begin{frame}{Konflikte}
   \begin{block}{Westinghouse}
+    Konflikt wegen Bremssystemen für Eisenbahnbremsen, statt hydraulischer
+    Signalisierung nutzt Hollerith elektrische, Westinghouse setzt sich jedoch
+    zunächst durch.
   \end{block}
   \begin{block}{Österreich}
+    Die Österreicher versuchen Holleriths Erfindung selbst zu vermarkten,
+    deklarieren Patente für ungültig.
   \end{block}
   \begin{block}{North}
+    Organisiert neue Volkszählung, versucht Holleriths Quasi-Monopol zu brechen 
+    und entwickelt mit Staatsmitteln Tabelliermaschinen (mit Hilfe von James Powers).
   \end{block}
 \end{frame}
 
 \begin{frame}{New York Central}
+  \begin{itemize}
+    \item Eisenbahngesellschaft
+    \item Nutzen Holeriths Maschinen schon relativ früh für Buchhaltung
+    \item Testballon für komerzielle Vermarktung
+  \end{itemize}
+  % TODO bild einfügen
 \end{frame}
 
 \begin{frame}{Verkauf an C-T-R}
@@ -125,12 +140,28 @@
 
 \section{DEHOMAG D11}
 
+\begin{frame}{D11}
+  \begin{itemize}
+    \item DEHOMAG, Deutsche Hollerith-Maschinen Gesellschaft mbH
+    \item 1935 - 1960 in Deutschland gebaut
+    \item Erste in großem Maßstab in Deutschland gebaute Maschine
+    \item Fabrik in Berlin gebaut
+  \end{itemize}
+  % TODO Bild einfügen
+\end{frame}
+% Source: Punched-Card Systems and the Early Information Explosion
+
 \subsection{Funktionsweise}
 
 \begin{frame}{Ablauf einer Berechnung}
 \end{frame}
 
-\begin{frame}{Unterschiede zu Holleriths Maschienen}
+\begin{frame}{Unterschiede zu Holleriths Maschinen}
+  \begin{itemize}
+    \item Bedruckte Lochkarten
+    \item Drucker für Ergebnisse
+    \item D11 kann Multiplizieren und Dividieren
+  \end{itemize}
 \end{frame}
 
 \section{Weiterentwicklung}
