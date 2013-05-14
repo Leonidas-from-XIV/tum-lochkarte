@@ -1,5 +1,5 @@
 all:
-	latexmk ausarbeitung.tex
+	latexmk ausarbeitung.tex slides.tex
 
 watch:
 	$(MAKE) all
