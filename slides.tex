@@ -14,6 +14,13 @@
 
 \beamertemplatenavigationsymbolsempty
 
+% seitenzahlen einfügen
+% http://texblog.net/latex-archive/plaintex/beamer-footline-frame-number/
+\newcommand*\oldmacro{}%
+\let\oldmacro\insertshorttitle%
+\renewcommand*\insertshorttitle{%
+  \oldmacro\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
 
 \begin{document}
 
@@ -28,16 +35,21 @@
 \subsection{Anfänge}
 
 \begin{frame}{Lebenslauf}
-  \begin{itemize}
-    \item Geboren 29. Februar 1860
-    \item Kind Deutscher Einwanderer
-    \item Entwickler von Tabelliermaschienen
-    \item Pionier des Einsatzes von Elektrizität
-    \item Erfinder (unter anderem Zugbrems-Systeme)
-    \item Heirat mit Lu Talcott
-    \item Gestorben 17. November 1929
-  \end{itemize}
-  % TODO Hollerith-Bild einfügen
+  \begin{columns}
+    \column{0.6\textwidth}
+    \begin{itemize}
+      \item Geboren 29. Februar 1860 in Buffalo, NY
+      \item Kind Deutscher Einwanderer
+      \item Entwickler von Tabelliermaschienen
+      \item Pionier des Einsatzes von Elektrizität
+      \item Erfinder (unter anderem Zugbrems-Systeme)
+      \item Heirat mit Lu Talcott
+      \item Gestorben 17. November 1929
+    \end{itemize}
+    \column{0.4\textwidth}
+      \includegraphics[height=0.8\textheight]{hollerith}\\
+      \tiny{Geoffrey D. Austrian, Herman Hollerith — Forgotten Giant of Information Processing}
+  \end{columns}
 \end{frame}
 
 \subsection{Volkszählungen}
@@ -57,10 +69,31 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}[plain]{Bahnticket}
+  \begin{center}
+    \includegraphics[width=\textwidth]{phototicket}\\
+    \tiny{\url{http://discussion.cprr.net/2007/01/punch-photograph-railroad-ticket.html}}
+  \end{center}
+\end{frame}
+
+\begin{frame}[plain]{Pantograph Punch}
+  \begin{center}
+    \includegraphics[height=0.9\textheight]{pantograph}\\
+    \tiny{\url{https://www.census.gov/history/www/innovations/technology/the\_hollerith\_tabulator.html}}
+  \end{center}
+\end{frame}
+
+\begin{frame}[plain]{1890er Tabelliermaschine}
+  \begin{center}
+    \includegraphics[height=0.9\textheight]{manuell}\\
+    \tiny{\url{https://secure.flickr.com/photos/44124384537@N01/411109339}}
+  \end{center}
+\end{frame}
+
 \begin{frame}{1900, USA}
   \begin{itemize}
     \item TMC wird zur Aktiengesellschaft
-    \item Wichtig: Farmstatistiken $\Rightarrow$ Erweiterung der 
+    \item Wichtig: Farmstatistiken $\Rightarrow$ Erweiterung der
       Inkrementiermaschinen zu Addiermaschinen
     \item \enquote{Key Punch} Lochstanzmaschine
     \item 1901 mit Sortiermaschine
@@ -100,7 +133,7 @@
     deklarieren Patente für ungültig.
   \end{block}
   \begin{block}{North}
-    Organisiert neue Volkszählung, versucht Holleriths Quasi-Monopol zu brechen 
+    Organisiert neue Volkszählung, versucht Holleriths Quasi-Monopol zu brechen
     und entwickelt mit Staatsmitteln Tabelliermaschinen (mit Hilfe von James Powers).
   \end{block}
 \end{frame}
@@ -140,21 +173,28 @@
 
 \section{DEHOMAG D11}
 
+\begin{frame}[plain]{Dehomag D11 = IBM 450}
+  \begin{center}
+    \includegraphics[height=0.95\textheight]{d11}\\
+    \tiny{Eigene Aufnahme}
+  \end{center}
+\end{frame}
+
+\subsection{Bedeutung}
+
 \begin{frame}{D11}
   \begin{itemize}
     \item DEHOMAG, Deutsche Hollerith-Maschinen Gesellschaft mbH
-    \item 1935 - 1960 in Deutschland gebaut
+    \item D11 1935 - 1960 in Deutschland gebaut
     \item Erste in großem Maßstab in Deutschland gebaute Maschine
-    \item Fabrik in Berlin gebaut
+    \item Fabrik in Berlin errichtet
+    \item Wir haben eine \emph{funktionsfähige} D11 im Deutschen Museum
   \end{itemize}
   % TODO Bild einfügen
 \end{frame}
 % Source: Punched-Card Systems and the Early Information Explosion
 
 \subsection{Funktionsweise}
-
-\begin{frame}{Ablauf einer Berechnung}
-\end{frame}
 
 \begin{frame}{Unterschiede zu Holleriths Maschinen}
   \begin{itemize}
