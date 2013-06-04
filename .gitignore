@@ -31,5 +31,7 @@
 *.xdy
 *.tdo
 *.fls
+*.xml
+*.bcf
 ausarbeitung.pdf
 slides.pdf

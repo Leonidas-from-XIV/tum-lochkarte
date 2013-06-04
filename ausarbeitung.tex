@@ -3,6 +3,9 @@
 \usepackage[ngerman]{babel}
 \usepackage{hyperref}
 \usepackage{csquotes}
+\usepackage{biblatex}
+
+\bibliography{ausarbeitung}
 
 % nicht einmal notwendig, ist eh standard
 %\fontspec{Latin Modern Roman}
@@ -152,14 +155,14 @@ Tabelliermaschinen~\cite{austrian1982herman}.
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{pantograph}
-  \caption{TODO}
+  \caption{TODO~\cite{pantograph}}
   \label{fig:pantograph}
 \end{figure}
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{manuell}
-  \caption{TODO}
+  \caption{TODO~\cite{1890}}
   \label{fig:1890}
 \end{figure}
 
@@ -303,7 +306,8 @@ großes Problem, tatsächlich hatte Hollerith eine simple Variante davon bereits
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{keypunch}
-  \caption{TODO}
+  \caption{Ein späteres Modell der \enquote{key punch}, man erkennt gut die
+    Tasten und den Vorrückmechanismus~\cite{keypunch}}
   \label{fig:keypunch}
 \end{figure}
 
@@ -679,7 +683,6 @@ viel mehr als 120 GB Speicher.
 
 \section{Fazit}
 
-\bibliographystyle{plain}
-\bibliography{ausarbeitung}
+\printbibliography
 
 \end{document}
